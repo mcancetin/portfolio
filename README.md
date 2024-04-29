@@ -5,4 +5,4 @@ This repository showcases my completed projects from [Frontend Mentor](https://w
 
 ### Newbie
 
- - [QR code component]()
+ - [QR code component](https://qr-code-components-phi.vercel.app/)
