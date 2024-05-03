@@ -1,0 +1,11 @@
+h1 {
+  @include heading($h1-font-size, $line-height-lg);
+}
+
+h2 {
+  @include heading($h2-font-size, $line-height-md);
+}
+
+h3 {
+  @include heading($h3-font-size, $line-height-sm);
+}

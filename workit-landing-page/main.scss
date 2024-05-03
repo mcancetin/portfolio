@@ -5,10 +5,17 @@
   "stylesheets/abstracts/mixins";
 
 // 3. Base stuff
-@import "stylesheets/base/base", "stylesheets/base/typography";
+@import "stylesheets/base/base", "stylesheets/base/typography",
+  "stylesheets/base/fonts";
 
 // 4. Layout-related sections
-// @import "stylesheets/layout/header", "stylesheets/layout/footer";
+@import "stylesheets/layout/container", "stylesheets/layout/header",
+  "stylesheets/layout/footer";
 
 // 5. Components
-// @import "components/";
+@import "stylesheets/components/button", "stylesheets/components/heading",
+  "stylesheets/components/card";
+
+// 6. Pages
+
+@import "stylesheets/pages/home";

@@ -3,14 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
     <link rel="stylesheet" href="/node_modules/reset-css/reset.css" />
     <link rel="stylesheet" href="main.scss" />
-
     <title>Frontend Mentor | Workit landing page</title>
   </head>
+
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <a href="/">
+            <img src="/images/logo-light.svg" alt="Workit Logo" />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <a href="#" class="btn btn--secondary">Apply for access</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <img
+          class="hero__pattern hero__pattern-left"
+          src="/public/images/bg-pattern-1.svg"
+          alt=""
+        />
+        <img
+          class="hero__pattern hero__pattern-right"
+          src="/public/images/bg-pattern-2.svg"
+          alt=""
+        />
+        <h1 class="hero__heading center-heading">
+          Data <u>tailored</u> to <br />
+          your needs.
+        </h1>
+        <a href="#" class="hero__btn btn btn--primary">Learn more</a>
+        <img class="hero__image" src="/public/images/image-hero.webp" alt="" />
+      </section>
+
+      <section class="features">
+        <article class="card">
+          <span class="card__number">1</span>
+          <h3 class="card__header">Actionable insights</h3>
+          <p class="card__description">
+            Optimize your products, improve customer satisfaction and stay ahead
+            of the competition with our product data analytics.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card__number">2</span>
+          <h3 class="card__header">Data-driven decisions</h3>
+          <p class="card__description">
+            Make data-driven decisions with our product data analytics. Our
+            AI-generated reports help you unlock insights hidden in your product
+            data.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card__number">3</span>
+          <h3 class="card__header">Always affordable</h3>
+          <p class="card__description">
+            Always affordable pricing that scales with your business. Get
+            top-quality product data analytics services without hidden costs or
+            unexpected fees.
+          </p>
+        </article>
+      </section>
+
+      <section class="testimonial">
+        <img
+          class="testimonial__image"
+          src="/public/images/image-founder.webp"
+          alt="Louis Graham Photo"
+        />
+        <article class="testimonial__card">
+          <h2 class="testimonial__header">Be the first to test</h2>
+          <p class="testimonial__text">
+            Hi, I'm Louis Graham, the founder of the company. Book a demo call
+            with me to become a beta tester for our app and kickstart your
+            company. Apply for access below and I’ll be in touch to schedule a
+            call.
+          </p>
+          <a href="#" class="testimonial__cta btn btn--primary"
+            >Apply for access</a
+          >
+        </article>
+      </section>
+
+      <footer class="footer">
+        <img
+          src="/public/images/logo-dark.svg"
+          alt="Workit Logo"
+          class="footer__logo"
+        />
+        <ul class="footer__links">
+          <li>
+            <a href="#"
+              ><img src="/public/images/icon-facebook.svg" alt="Facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/public/images/icon-twitter.svg" alt="Twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/public/images/icon-instagram.svg"
+                alt="Instagram logo"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

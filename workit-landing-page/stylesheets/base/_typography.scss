@@ -1,3 +1,9 @@
-h1 {
-  color: red;
+body {
+  color: $color-primary;
+}
+
+u {
+  text-decoration-color: $color-secondary;
+  text-decoration-thickness: 0.5rem;
+  text-underline-offset: 1rem;
 }

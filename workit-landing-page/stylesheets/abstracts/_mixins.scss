@@ -1,0 +1,13 @@
+@mixin heading($size, $line-height) {
+  font-family: $font-family-primary;
+  font-weight: 700;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin body-text {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
