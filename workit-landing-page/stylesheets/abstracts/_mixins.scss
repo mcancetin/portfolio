@@ -14,25 +14,25 @@
 
 @mixin respond($breakpoints) {
   @if $breakpoints== phone {
-    @media (max-width: 375px) {
+    @media (max-width: 23.5em) {
       @content;
     }
   }
 
   @if $breakpoints== tablet {
-    @media (max-width: 768px) {
+    @media (max-width: 48em) {
       @content;
     }
   }
 
   @if $breakpoints== laptop {
-    @media (max-width: 1024px) {
+    @media (max-width: 64em) {
       @content;
     }
   }
 
   @if $breakpoints== desktop {
-    @media (min-width: 1440px) {
+    @media (min-width: 90em) {
       @content;
     }
   }
