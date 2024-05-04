@@ -37,8 +37,22 @@
   }
 
   &__image {
-    width: 71rem;
+    width: 100%;
     height: auto;
+
+    max-width: 71rem;
+
+    @include respond(laptop) {
+      max-width: 638px;
+    }
+
+    @include respond(tablet) {
+      max-width: 479px;
+    }
+
+    @include respond(phone) {
+      max-width: 298px;
+    }
   }
 }
 
@@ -105,7 +119,7 @@
       max-width: 51rem;
     }
 
-    @include respond(tablet) {
+    @include respond(phone) {
       margin: 0 auto;
     }
   }
