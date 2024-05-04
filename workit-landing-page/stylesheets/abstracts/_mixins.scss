@@ -11,3 +11,29 @@
   font-size: 1.8rem;
   line-height: 3.2rem;
 }
+
+@mixin respond($breakpoints) {
+  @if $breakpoints== phone {
+    @media (max-width: 23.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints== tablet {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints== laptop {
+    @media (max-width: 64em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints== desktop {
+    @media (min-width: 90rem) {
+      @content;
+    }
+  }
+}

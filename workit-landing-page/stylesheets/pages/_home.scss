@@ -7,9 +7,17 @@
   &__pattern {
     position: absolute;
 
+    @include respond(phone) {
+      display: none;
+    }
+
     &-left {
       top: 12rem;
       left: -14rem;
+
+      @include respond(tablet) {
+        left: -32rem;
+      }
     }
 
     &-right {
@@ -37,9 +45,19 @@
 .features {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2.6rem;
   position: relative;
   margin-bottom: 45rem;
+
+  @include respond(desktop) {
+    gap: 3.6rem;
+  }
+
+  @include respond(tablet) {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
 }
 
 .testimonial {
@@ -50,6 +68,20 @@
     max-width: 47rem;
     top: -18rem;
     z-index: 0;
+
+    @include respond(desktop) {
+      top: -16rem;
+    }
+
+    @include respond(tablet) {
+      top: -26rem;
+    }
+
+    @include respond(phone) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -35rem;
+    }
   }
 
   &__card {
@@ -60,13 +92,44 @@
     padding: 6.4rem;
     background-color: $color-primary;
     color: $color-white;
-    width: 58rem;
+    max-width: 58rem;
     margin-left: auto;
     z-index: 100;
     position: relative;
+
+    @include respond(desktop) {
+      max-width: 80rem;
+    }
+
+    @include respond(tablet) {
+      max-width: 51rem;
+    }
+
+    @include respond(tablet) {
+      margin: 0 auto;
+    }
   }
 
   &__text {
     @include body-text;
+  }
+
+  &__pattern {
+    position: absolute;
+    bottom: -8rem;
+    right: 15rem;
+
+    @include respond(laptop) {
+      bottom: -12rem;
+      right: 10rem;
+    }
+
+    @include respond(tablet) {
+      right: 0rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }

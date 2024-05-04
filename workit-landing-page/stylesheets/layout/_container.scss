@@ -1,4 +1,20 @@
 .container {
   max-width: 77%;
   margin: 0 auto;
+
+  @include respond(laptop) {
+    max-width: 90%;
+  }
+
+  @include respond(laptop) {
+    max-width: 85%;
+  }
+
+  @include respond(laptop) {
+    max-width: 90%;
+  }
+
+  @include respond(phone) {
+    max-width: 95%;
+  }
 }
