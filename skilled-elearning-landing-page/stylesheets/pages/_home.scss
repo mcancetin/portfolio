@@ -1,0 +1,24 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__article {
+    max-width: 45.7rem;
+  }
+
+  &__heading {
+    margin-bottom: 2.9rem;
+  }
+
+  &__text {
+    @include body-text($body-md, 400);
+    margin-bottom: 4rem;
+  }
+
+  &__image {
+    position: absolute;
+    top: -10rem;
+    right: -30rem;
+  }
+}

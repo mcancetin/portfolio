@@ -1,0 +1,38 @@
+@mixin heading($size, $line-height) {
+  font-weight: 700;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin body-text($size, $weight) {
+  color: $color-grey;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height-sm;
+}
+
+@mixin respond($breakpoints) {
+  @if $breakpoints== phone {
+    @media (max-width: 26.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints== tablet {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints== laptop {
+    @media (max-width: 64em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints== desktop {
+    @media (min-width: 90em) {
+      @content;
+    }
+  }
+}

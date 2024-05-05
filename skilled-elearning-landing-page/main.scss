@@ -1,6 +1,6 @@
 // 1. Abstracts
 
-@import "stylesheets/abstracts/variables";
+@import "stylesheets/abstracts/variables", "stylesheets/abstracts/mixins";
 
 // 2. Base
 
@@ -14,3 +14,7 @@
 // 4. Layout
 
 @import "stylesheets/layout/container", "stylesheets/layout/header";
+
+// 5. Pages
+
+@import "stylesheets/pages/home";

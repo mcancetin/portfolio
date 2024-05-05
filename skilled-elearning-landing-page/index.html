@@ -10,16 +10,53 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img
-          src="/assets/logo-dark.svg"
-          alt="Skilled Logo"
-          class="header__logo"
-        />
-        <nav class="header__nav">
-          <a href="#" class="header__cta btn btn--primary">Get Started</a>
-        </nav>
-      </header>
+      <div class="wrapper">
+        <header class="header">
+          <img
+            src="/assets/logo-dark.svg"
+            alt="Skilled Logo"
+            class="header__logo"
+          />
+          <nav class="header__nav">
+            <a href="#" class="header__cta btn btn--primary">Get Started</a>
+          </nav>
+        </header>
+
+        <main class="main">
+          <section class="hero">
+            <article class="hero__article">
+              <h1 class="hero__heading">
+                Maximize skill,<br />
+                minimize budget
+              </h1>
+              <p class="hero__text">
+                Our modern courses across a range of in-demand skills will give
+                you the knowledge you need to live the life you want.
+              </p>
+              <a href="#" class="hero__cta btn btn--secondary">Get Started</a>
+            </article>
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="public/assets/image-hero-desktop.webp"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="public/assets/image-hero-tablet.webp"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="public/assets/image-hero-mobile.webp"
+              />
+              <img
+                src="public/assets/image-hero-desktop.webp"
+                alt=""
+                class="hero__image"
+              />
+            </picture>
+          </section>
+        </main>
+      </div>
     </div>
   </body>
 </html>

@@ -1,4 +1,10 @@
 .container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
   width: 77%;
   margin: 0 auto;
 }
