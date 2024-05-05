@@ -16,6 +16,7 @@
 
   &--primary:hover {
     background-color: $color-secondary-hover;
+    cursor: pointer;
   }
 
   &--secondary:link,
@@ -25,10 +26,28 @@
     padding: 1.75rem 3.2rem;
   }
 
+  &--secondary:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      $gradient-primary;
+  }
+
   &--tertiary:link,
   &--tertiary:visited {
     border-radius: 2.8rem;
     background: $gradient-secondary;
     padding: 1.7rem 3.2rem;
+  }
+
+  &--tertiary:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      $gradient-secondary;
   }
 }

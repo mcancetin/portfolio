@@ -9,11 +9,12 @@
 
 // 3. Components
 
-@import "stylesheets/components/button";
+@import "stylesheets/components/button", "stylesheets/components/card";
 
 // 4. Layout
 
-@import "stylesheets/layout/container", "stylesheets/layout/header";
+@import "stylesheets/layout/container", "stylesheets/layout/header",
+  "stylesheets/layout/footer";
 
 // 5. Pages
 

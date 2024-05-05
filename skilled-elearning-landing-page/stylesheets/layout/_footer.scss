@@ -1,0 +1,13 @@
+.footer {
+  background-color: $color-secondary;
+
+  & .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10rem;
+  }
+
+  &__logo {
+  }
+}

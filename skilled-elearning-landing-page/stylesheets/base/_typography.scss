@@ -15,5 +15,5 @@ h3 {
 }
 
 h4 {
-  @include heading($h3-font-size, $line-height-sm);
+  @include heading($h4-font-size, $line-height-sm);
 }
