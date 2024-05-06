@@ -5,6 +5,10 @@ html {
   @include respond(tablet) {
     font-size: 45%;
   }
+
+  @include respond(phone-xs) {
+    font-size: 35%;
+  }
 }
 *,
 *:before,
