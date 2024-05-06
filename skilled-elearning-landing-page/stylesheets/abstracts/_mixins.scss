@@ -13,7 +13,7 @@
 
 @mixin respond($breakpoints) {
   @if $breakpoints== phone {
-    @media (max-width: 26.5em) {
+    @media (max-width: 23.45em) {
       @content;
     }
   }
@@ -31,7 +31,7 @@
   }
 
   @if $breakpoints== desktop {
-    @media (min-width: 90em) {
+    @media (min-width: 91em) {
       @content;
     }
   }

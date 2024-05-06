@@ -15,7 +15,7 @@
           <img
             src="/assets/logo-dark.svg"
             alt="Skilled Logo"
-            class="header__logo"
+            class="header__logo logo"
           />
           <nav class="header__nav">
             <a href="#" class="header__cta btn btn--primary">Get Started</a>
@@ -38,6 +38,10 @@
               <a href="#" class="hero__cta btn btn--secondary">Get Started</a>
             </article>
             <picture>
+              <source
+                media="(min-width:1441px)"
+                srcset="/assets/image-hero-desktop@2x.webp"
+              />
               <source
                 media="(min-width:1024px)"
                 srcset="/assets/image-hero-desktop.webp"
@@ -120,7 +124,7 @@
 
       <footer class="footer">
         <div class="wrapper">
-          <img class="footer__logo" src="/assets/logo-light.svg" alt="" />
+          <img class="footer__logo logo" src="/assets/logo-light.svg" alt="" />
           <a href="#" class="btn btn--tertiary footer__cta">Get Started</a>
         </div>
       </footer>

@@ -7,4 +7,12 @@
 .wrapper {
   width: 77%;
   margin: 0 auto;
+
+  @include respond(tablet) {
+    width: 90%;
+  }
+
+  @include respond(phone) {
+    width: 90%;
+  }
 }

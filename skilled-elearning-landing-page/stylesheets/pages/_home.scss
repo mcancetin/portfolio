@@ -4,8 +4,10 @@
   justify-content: space-between;
   margin-bottom: 25rem;
 
-  &__article {
-    max-width: 45.7rem;
+  @include respond(phone) {
+    gap: 4rem;
+    flex-direction: column;
+    margin-bottom: 0;
   }
 
   &__heading {
@@ -15,13 +17,38 @@
   &__text {
     @include body-text($body-md, 400);
     margin-bottom: 4rem;
+    width: 35ch;
   }
 
   &__image {
+    display: block;
+    margin: 0 auto;
     position: absolute;
-    top: -15rem;
-    right: -36rem;
+    top: -15vh;
+    right: -25vw;
     z-index: -99;
+
+    @include respond(desktop) {
+      width: 60%;
+      top: -20vh;
+      right: -5vw;
+    }
+
+    @include respond(laptop) {
+      width: 75%;
+      top: 0;
+      right: -30rem;
+    }
+
+    @include respond(tablet) {
+      top: -5rem;
+      right: -30rem;
+    }
+
+    @include respond(phone) {
+      position: initial;
+      margin-bottom: 4rem;
+    }
   }
 }
 
@@ -40,5 +67,16 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 3rem;
     row-gap: 6rem;
+
+    @include respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 1.3rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
