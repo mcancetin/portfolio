@@ -11,34 +11,8 @@
   line-height: $line-height-sm;
 }
 
-@mixin respond($breakpoints) {
-  @if $breakpoints== phone-xs {
-    @media (max-width: 20em) {
-      @content;
-    }
-  }
-
-  @if $breakpoints== phone {
-    @media (max-width: 26.6em) {
-      @content;
-    }
-  }
-
-  @if $breakpoints== tablet {
-    @media (max-width: 48em) {
-      @content;
-    }
-  }
-
-  @if $breakpoints== laptop {
-    @media (max-width: 64em) {
-      @content;
-    }
-  }
-
-  @if $breakpoints== desktop {
-    @media (min-width: 91em) {
-      @content;
-    }
+@mixin respond($type, $breakpoints) {
+  @media ($type: $breakpoints) {
+    @content;
   }
 }

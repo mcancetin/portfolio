@@ -12,11 +12,13 @@
     <div class="container">
       <div class="wrapper">
         <header class="header">
-          <img
-            src="/assets/logo-dark.svg"
-            alt="Skilled Logo"
-            class="header__logo logo"
-          />
+          <a href="/">
+            <img
+              src="/assets/logo-dark.svg"
+              alt="Skilled Logo"
+              class="header__logo logo"
+            />
+          </a>
           <nav class="header__nav">
             <a href="#" class="header__cta btn btn--primary">Get Started</a>
           </nav>
@@ -39,23 +41,25 @@
             </article>
             <picture>
               <source
-                media="(min-width:1441px)"
-                srcset="/assets/image-hero-desktop@2x.webp"
-              />
-              <source
                 media="(min-width:1024px)"
-                srcset="/assets/image-hero-desktop.webp"
+                srcset="
+                  /assets/image-hero-desktop.png,
+                  /assets/image-hero-desktop.webp,
+                  /assets/image-hero-desktop@2x.png,
+                  /assets/image-hero-desktop@2x.webp
+                "
               />
               <source
-                media="(min-width:768px)"
-                srcset="/assets/image-hero-tablet.webp"
-              />
-              <source
-                media="(min-width:320px)"
-                srcset="/assets/image-hero-mobile.webp"
+                media="(min-width:640px)"
+                srcset="
+                  /assets/image-hero-tablet.png,
+                  /assets/image-hero-tablet.webp,
+                  /assets/image-hero-tablet@2x.png,
+                  /assets/image-hero-tablet@2x.webp
+                "
               />
               <img
-                src="/assets/image-hero-desktop.webp"
+                src="/assets/image-hero-mobile.webp"
                 alt=""
                 class="hero__image"
               />
@@ -124,7 +128,13 @@
 
       <footer class="footer">
         <div class="wrapper">
-          <img class="footer__logo logo" src="/assets/logo-light.svg" alt="" />
+          <a href="/">
+            <img
+              class="footer__logo logo"
+              src="/assets/logo-light.svg"
+              alt=""
+            />
+          </a>
           <a href="#" class="btn btn--tertiary footer__cta">Get Started</a>
         </div>
       </footer>

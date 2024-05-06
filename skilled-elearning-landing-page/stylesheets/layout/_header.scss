@@ -5,4 +5,8 @@
   min-height: 10rem;
 
   margin-bottom: 14.6rem;
+
+  @include respond(min-width, 91em) {
+    margin-bottom: 5rem;
+  }
 }

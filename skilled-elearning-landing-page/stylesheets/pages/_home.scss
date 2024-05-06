@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin-bottom: 25rem;
 
-  @include respond(phone) {
+  @include respond(max-width, 40em) {
     gap: 4rem;
     flex-direction: column;
     margin-bottom: 0;
@@ -22,32 +22,43 @@
 
   &__image {
     display: block;
-    margin: 0 auto;
+    max-width: 100%;
     position: absolute;
-    top: -15vh;
-    right: -25vw;
+    top: -6.5%;
+    right: -25%;
     z-index: -99;
 
-    @include respond(desktop) {
-      width: 60%;
-      top: -20vh;
-      right: -5vw;
-    }
-
-    @include respond(laptop) {
+    @include respond(min-width, 91em) {
       width: 75%;
-      top: 0;
-      right: -30rem;
+      position: initial;
+      margin-left: auto;
     }
 
-    @include respond(tablet) {
-      top: -5rem;
-      right: -30rem;
+    @include respond(max-width, 75em) {
+      top: -7.5%;
+      right: -35%;
     }
 
-    @include respond(phone) {
+    @include respond(max-width, 64em) {
+      top: -5%;
+      right: -25%;
+    }
+
+    @include respond(max-width, 55em) {
+      top: -5%;
+      right: -30%;
+    }
+
+    @include respond(max-width, 48em) {
+      width: 75%;
+      top: -2.5%;
+      right: -28%;
+    }
+
+    @include respond(max-width, 40em) {
       position: initial;
       margin-bottom: 4rem;
+      margin: 0 auto;
     }
   }
 }
@@ -68,13 +79,13 @@
     column-gap: 3rem;
     row-gap: 6rem;
 
-    @include respond(tablet) {
+    @include respond(max-width, 48em) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       column-gap: 1.3rem;
     }
 
-    @include respond(phone) {
+    @include respond(max-width, 26.5em) {
       display: flex;
       flex-direction: column;
     }
