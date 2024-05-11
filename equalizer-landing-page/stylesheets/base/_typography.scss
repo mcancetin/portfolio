@@ -1,0 +1,16 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: $color-black;
+}
+
+h1 {
+  @include heading($h1-font-size, $line-height-xl);
+}
+
+h2 {
+  @include heading($h2-font-size, $line-height-lg);
+}
+
+strong {
+  font-weight: bold;
+}

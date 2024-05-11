@@ -1,0 +1,27 @@
+.footer {
+  min-height: 8rem;
+  margin-bottom: 9.1rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(max-width, 36.25em) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__text {
+    max-width: 45ch;
+    font-size: 1.6rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__link:hover {
+    color: $color-orange;
+  }
+}

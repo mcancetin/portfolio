@@ -1,0 +1,18 @@
+.container {
+  height: 100%;
+}
+
+.wrapper {
+  width: 77%;
+  margin: 0 auto;
+
+  @include respond(max-width, 48em) {
+    width: 90%;
+  }
+
+  @include respond(max-width, 32em) {
+    &:has(.cta) {
+      width: 100%;
+    }
+  }
+}

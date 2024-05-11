@@ -1,0 +1,110 @@
+.bg-pattern-1 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -4rem;
+  right: 0;
+
+  max-width: 31rem;
+
+  @include respond(max-width, 48em) {
+    top: -10rem;
+  }
+
+  @include respond(max-width, 43em) {
+    display: none;
+  }
+}
+
+.hero {
+  max-width: 150ch;
+  padding-right: 1rem;
+  margin-bottom: 32rem;
+
+  &__heading {
+    letter-spacing: $letter-spacing-xl;
+    margin-bottom: 4rem;
+  }
+
+  &__description {
+    @include body-text($body-md, $line-height-md);
+  }
+
+  @include respond(max-width, 48em) {
+    max-width: 90ch;
+  }
+
+  @include respond(max-width, 43em) {
+    max-width: 100%;
+  }
+}
+
+.cta {
+  height: 60rem;
+  position: relative;
+  background-color: $color-black;
+  border-radius: 1.2rem;
+
+  margin-bottom: 18rem;
+  @include respond(max-width, 32em) {
+    margin-bottom: 45rem;
+  }
+
+  &__illustration {
+    width: 100%;
+    height: auto;
+    max-width: 31rem;
+    position: absolute;
+    top: -35%;
+    left: 10rem;
+
+    @include respond(max-width, 43em) {
+      left: 1rem;
+    }
+
+    @include respond(max-width, 32em) {
+      z-index: 10;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__pattern {
+    width: 100%;
+    height: auto;
+    max-width: 31rem;
+    margin-left: 33rem;
+    margin-top: -4rem;
+
+    @include respond(max-width, 36.25em) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @include respond(max-width, 32em) {
+      max-width: 40rem;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+
+    @include respond(max-width, 43em) {
+      right: 1rem;
+    }
+
+    @include respond(max-width, 32em) {
+      width: 100%;
+      right: 0;
+      top: 75%;
+    }
+  }
+}

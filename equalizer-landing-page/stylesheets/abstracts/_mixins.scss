@@ -1,0 +1,16 @@
+@mixin heading($size, $line-height) {
+  font-weight: 700;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin body-text($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin respond($type, $breakpoints) {
+  @media ($type: $breakpoints) {
+    @content;
+  }
+}

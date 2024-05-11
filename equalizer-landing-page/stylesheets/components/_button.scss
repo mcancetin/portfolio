@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  border-radius: 1.2rem;
+  text-decoration: none;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: $line-height-lg;
+  }
+
+  &--ios {
+    &:link,
+    &:visited {
+      background-color: $color-black;
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+
+  &--android {
+    &:link,
+    &:visited {
+      background-color: $color-white;
+      color: $color-black;
+
+      &:hover {
+        background-color: $color-yellow;
+      }
+    }
+  }
+}
